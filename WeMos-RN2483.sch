@@ -3711,7 +3711,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R2" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="4.7K"/>
 <part name="I2C_OLED" library="_c2h" deviceset="CON_HEADER_1X04" device="'SMALL''" value="CON_HEADER_1X04'SMALL''"/>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
-<attribute name="CNAME" value="ESP8266 WeMos Lora RN2482 Shield"/>
+<attribute name="CNAME" value="ESP8266 WeMos Lora RN2483 Shield"/>
 <attribute name="CREVISION" value="1.0"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
