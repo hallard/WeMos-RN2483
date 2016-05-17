@@ -54,6 +54,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="b3D" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -808,35 +809,31 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <package name="RN2483_4GPIO">
 <wire x1="0" y1="26.67" x2="17.8" y2="26.67" width="0.127" layer="21"/>
 <wire x1="17.8" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<smd name="GND" x="17.78" y="1.27" dx="1.016" dy="1.524" layer="1" rot="R90"/>
-<smd name="UART_TX" x="17.78" y="7.62" dx="1.016" dy="1.524" layer="1" rot="R90"/>
-<smd name="UART_RX" x="17.78" y="8.89" dx="1.016" dy="1.524" layer="1" rot="R90"/>
-<smd name="GND1" x="17.78" y="10.16" dx="1.016" dy="1.524" layer="1" rot="R90"/>
-<smd name="GND2" x="17.78" y="13.97" dx="1.016" dy="1.524" layer="1" rot="R90"/>
-<smd name="VDD" x="17.78" y="15.24" dx="1.016" dy="1.524" layer="1" rot="R90"/>
-<smd name="GND3" x="17.78" y="25.4" dx="1.016" dy="1.524" layer="1" rot="R90"/>
-<smd name="GND4" x="12.7" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
-<smd name="GND5" x="11.43" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
-<smd name="RFH" x="10.16" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
-<smd name="GND6" x="8.89" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
-<smd name="RFL" x="7.62" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
-<smd name="GND7" x="6.35" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
-<smd name="GND8" x="5.08" y="26.67" dx="1.016" dy="1.524" layer="1" rot="R180"/>
-<smd name="GND9" x="0" y="25.4" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="RESET°" x="0" y="20.32" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="GND10" x="0" y="19.05" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="VDD2" x="0" y="17.78" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="GND11" x="0" y="8.89" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="GND12" x="0" y="1.27" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="UART_RTS" x="17.78" y="2.54" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="UART_CTS" x="17.78" y="3.81" dx="1.016" dy="1.524" layer="1" rot="R270"/>
+<smd name="GND" x="17.907" y="1.27" dx="1.016" dy="1.778" layer="1" rot="R90"/>
+<smd name="UART_TX" x="17.907" y="7.62" dx="1.016" dy="1.778" layer="1" rot="R90"/>
+<smd name="UART_RX" x="17.907" y="8.89" dx="1.016" dy="1.778" layer="1" rot="R90"/>
+<smd name="GND1" x="17.907" y="10.16" dx="1.016" dy="1.778" layer="1" rot="R90"/>
+<smd name="GND2" x="17.907" y="13.97" dx="1.016" dy="1.778" layer="1" rot="R90"/>
+<smd name="VDD" x="17.907" y="15.24" dx="1.016" dy="1.778" layer="1" rot="R90"/>
+<smd name="GND3" x="17.907" y="25.4" dx="1.016" dy="1.778" layer="1" rot="R90"/>
+<smd name="GND4" x="12.7" y="26.797" dx="1.016" dy="1.778" layer="1" rot="R180"/>
+<smd name="GND5" x="11.43" y="26.797" dx="1.016" dy="1.778" layer="1" rot="R180"/>
+<smd name="RFH" x="10.16" y="26.797" dx="1.016" dy="1.778" layer="1" rot="R180"/>
+<smd name="GND6" x="8.89" y="26.797" dx="1.016" dy="1.778" layer="1" rot="R180"/>
+<smd name="RFL" x="7.62" y="26.797" dx="1.016" dy="1.778" layer="1" rot="R180"/>
+<smd name="GND7" x="6.35" y="26.797" dx="1.016" dy="1.778" layer="1" rot="R180"/>
+<smd name="GND8" x="5.08" y="26.797" dx="1.016" dy="1.778" layer="1" rot="R180"/>
+<smd name="GND9" x="-0.127" y="25.4" dx="1.016" dy="1.778" layer="1" rot="R270"/>
+<smd name="RESET°" x="-0.127" y="20.32" dx="1.016" dy="1.778" layer="1" rot="R270"/>
+<smd name="GND10" x="-0.127" y="19.05" dx="1.016" dy="1.778" layer="1" rot="R270"/>
+<smd name="VDD2" x="-0.127" y="17.78" dx="1.016" dy="1.778" layer="1" rot="R270"/>
+<smd name="GND11" x="-0.127" y="8.89" dx="1.016" dy="1.778" layer="1" rot="R270"/>
+<smd name="GND12" x="-0.127" y="1.27" dx="1.016" dy="1.778" layer="1" rot="R270"/>
 <rectangle x1="3.81" y1="2.54" x2="13.97" y2="15" layer="51"/>
 <text x="2.54" y="22.86" size="1.27" layer="25">&gt;Name</text>
 <text x="2.54" y="21.59" size="1.27" layer="27">&gt;Value</text>
-<smd name="GPIO0" x="0" y="16.51" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="GPIO1" x="0" y="15.24" dx="1.016" dy="1.524" layer="1" rot="R270"/>
-<smd name="GPIO11" x="17.78" y="16.51" dx="1.016" dy="1.524" layer="1" rot="R90"/>
-<smd name="GPIO10" x="17.78" y="17.78" dx="1.016" dy="1.524" layer="1" rot="R90"/>
+<smd name="GPIO1" x="-0.127" y="15.24" dx="1.016" dy="1.778" layer="1" rot="R270"/>
+<smd name="GPIO10" x="17.907" y="17.78" dx="1.016" dy="1.778" layer="1" rot="R90"/>
 </package>
 <package name="SMA-EDGE">
 <description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
@@ -1111,12 +1108,8 @@ OUT</text>
 <pin name="RESET°" x="-20.32" y="17.78" visible="pin" length="short"/>
 <text x="-17.78" y="21.59" size="1.778" layer="95">&gt;NAME</text>
 <text x="-17.78" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="CTS" x="-20.32" y="5.08" visible="pin" length="short"/>
-<pin name="RTS" x="-20.32" y="2.54" visible="pin" length="short"/>
-<pin name="GPIO0" x="-20.32" y="-2.54" visible="pin" length="short"/>
-<pin name="GPIO1" x="-20.32" y="-5.08" visible="pin" length="short"/>
+<pin name="GPIO1" x="-20.32" y="-2.54" visible="pin" length="short"/>
 <pin name="GPIO10" x="-20.32" y="-7.62" visible="pin" length="short"/>
-<pin name="GPIO11" x="-20.32" y="-10.16" visible="pin" length="short"/>
 </symbol>
 <symbol name="ANTENNA">
 <wire x1="0" y1="-2.54" x2="0" y2="-12.7" width="0.254" layer="94"/>
@@ -1651,16 +1644,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <devices>
 <device name="" package="RN2483_4GPIO">
 <connects>
-<connect gate="G$1" pin="CTS" pad="UART_CTS"/>
 <connect gate="G$1" pin="GND" pad="GND GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8 GND9 GND10 GND11 GND12"/>
-<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
 <connect gate="G$1" pin="GPIO1" pad="GPIO1"/>
 <connect gate="G$1" pin="GPIO10" pad="GPIO10"/>
-<connect gate="G$1" pin="GPIO11" pad="GPIO11"/>
 <connect gate="G$1" pin="RESET°" pad="RESET°"/>
 <connect gate="G$1" pin="RFH" pad="RFH"/>
 <connect gate="G$1" pin="RFL" pad="RFL"/>
-<connect gate="G$1" pin="RTS" pad="UART_RTS"/>
 <connect gate="G$1" pin="RX" pad="UART_RX"/>
 <connect gate="G$1" pin="TX" pad="UART_TX"/>
 <connect gate="G$1" pin="VDD" pad="VDD VDD2"/>
@@ -3712,7 +3701,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="I2C_OLED" library="_c2h" deviceset="CON_HEADER_1X04" device="'SMALL''" value="CON_HEADER_1X04'SMALL''"/>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
 <attribute name="CNAME" value="ESP8266 WeMos Lora RN2483 Shield"/>
-<attribute name="CREVISION" value="1.0"/>
+<attribute name="CREVISION" value="1.1"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
 <part name="P+7" library="_c2h" deviceset="3V3-EXT" device="" value="3V3"/>
@@ -3741,13 +3730,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J$1" library="_c2h" deviceset="ANTENNA" device="SMALL"/>
 <part name="R3" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="390"/>
 <part name="R4" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="390"/>
-<part name="U$2" library="_c2h" deviceset="LED" device="0805" value="LED"/>
-<part name="U$3" library="_c2h" deviceset="LED" device="0805" value="LED"/>
+<part name="U$2" library="_c2h" deviceset="LED" device="0805" value="GRN"/>
+<part name="U$3" library="_c2h" deviceset="LED" device="0805" value="RED"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R5" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="SW1" library="Switch-2016" deviceset="SMD-BUTTON-TOP-DHT-4235A(4P-4.2X3.2MM)" device="" value="DHT-4235A"/>
 </parts>
 <sheets>
@@ -3766,6 +3753,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="153.67" y="146.05" size="2.54" layer="94">WeMos  Headers</text>
 <text x="105.41" y="120.65" size="1.778" layer="94">433MHz</text>
 <text x="105.41" y="135.89" size="1.778" layer="94">868MHz</text>
+<text x="86.36" y="41.91" size="1.778" layer="94">WeMos already have
+a pullup on GPIO2</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="208.28" y="64.77" smashed="yes" rot="R90">
@@ -3796,7 +3785,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="+3V5" gate="G$1" x="241.3" y="134.62" smashed="yes">
 <attribute name="VALUE" x="243.84" y="137.16" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND9" gate="1" x="114.3" y="111.76"/>
+<instance part="GND9" gate="1" x="114.3" y="99.06"/>
 <instance part="WS2812" gate="G$1" x="134.62" y="30.48" smashed="yes">
 <attribute name="NAME" x="121.92" y="36.068" size="1.6764" layer="95"/>
 </instance>
@@ -3849,14 +3838,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$3" gate="G$1" x="35.56" y="104.14"/>
 <instance part="GND6" gate="1" x="30.48" y="91.44"/>
 <instance part="GND7" gate="1" x="22.86" y="91.44"/>
-<instance part="R5" gate="G$1" x="85.09" y="49.53" smashed="yes" rot="R90">
-<attribute name="NAME" x="88.9254" y="48.641" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="83.82" y="48.006" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="GND10" gate="1" x="85.09" y="15.875"/>
-<instance part="+3V2" gate="G$1" x="85.09" y="58.42" smashed="yes">
-<attribute name="VALUE" x="87.63" y="60.96" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="SW1" gate="G$1" x="85.09" y="33.02"/>
 </instances>
 <busses>
@@ -3884,7 +3866,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="111.76" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
 <junction x="111.76" y="116.84"/>
 <pinref part="J$1" gate="1" pin="GND@3"/>
-<wire x1="114.3" y1="116.84" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="116.84" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
 <junction x="114.3" y="116.84"/>
 </segment>
 <segment>
@@ -3992,21 +3974,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="148.59" y1="133.35" x2="140.97" y2="133.35" width="0.1524" layer="91"/>
 <label x="140.97" y="133.35" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="85.09" y1="44.45" x2="85.09" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="85.09" y1="43.18" x2="85.09" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="85.09" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
-<junction x="85.09" y="43.18"/>
-<label x="87.63" y="43.18" size="1.778" layer="95"/>
-<pinref part="SW1" gate="G$1" pin="A0"/>
-<wire x1="85.09" y1="40.64" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="40.64" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="A1"/>
-<wire x1="93.98" y1="35.56" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="40.64" x2="85.09" y2="40.64" width="0.1524" layer="91"/>
-<junction x="85.09" y="40.64"/>
-</segment>
 </net>
 <net name="GPIO12" class="0">
 <segment>
@@ -4015,9 +3982,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP2" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="JTX" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
-<label x="40.64" y="116.84" size="1.778" layer="95"/>
+<wire x1="60.96" y1="129.54" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
+<label x="53.34" y="129.54" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="RESET°"/>
+<junction x="60.96" y="129.54"/>
 </segment>
 </net>
 <net name="GPIO13" class="0">
@@ -4027,9 +3995,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="140.97" y="128.27" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JRX" gate="G$1" pin="3"/>
-<wire x1="40.64" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<label x="40.64" y="129.54" size="1.778" layer="95"/>
+<pinref part="JTX" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="116.84" x2="48.26" y2="116.84" width="0.1524" layer="91"/>
+<label x="40.64" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO15" class="0">
@@ -4039,10 +4007,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="140.97" y="125.73" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="129.54" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
-<label x="53.34" y="129.54" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="RESET°"/>
-<junction x="60.96" y="129.54"/>
+<pinref part="JRX" gate="G$1" pin="3"/>
+<wire x1="40.64" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
+<label x="40.64" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -4084,11 +4051,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="I2C_OLED" gate="G$1" pin="1"/>
 <label x="233.68" y="49.53" size="1.778" layer="95"/>
 <wire x1="248.92" y1="49.53" x2="231.14" y2="49.53" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="85.09" y1="55.88" x2="85.09" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -4141,6 +4103,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP1" gate="G$1" pin="6"/>
 <wire x1="184.15" y1="128.27" x2="189.23" y2="128.27" width="0.1524" layer="91"/>
 <label x="184.15" y="128.27" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
+<label x="94.996" y="36.068" size="1.778" layer="95"/>
+<pinref part="SW1" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
@@ -4226,7 +4193,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO0"/>
+<pinref part="U1" gate="G$1" pin="GPIO1"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="109.22" x2="49.53" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -4256,19 +4223,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,181.61,140.97,3V3-EXT,3V3,,,,"/>
-<approved hash="102,1,142.24,137.16,+3V3,3V3,,,,"/>
-<approved hash="102,1,213.36,93.98,+5V,5V,,,,"/>
-<approved hash="102,1,60.96,124.46,+3V3,3V3,,,,"/>
-<approved hash="102,1,74.93,71.12,+3V3,3V3,,,,"/>
-<approved hash="104,1,213.36,78.74,WS2812,VDD,VLED,,,"/>
-<approved hash="106,1,133.35,102.87,A0,,,,,"/>
-<approved hash="106,1,168.91,92.71,GPIO2,,,,,"/>
-<approved hash="106,1,133.35,100.33,GPIO16,,,,,"/>
-<approved hash="106,1,133.35,105.41,RST,,,,,"/>
-<approved hash="113,1,136.567,95.0553,JP2,,,,,"/>
-<approved hash="113,1,165.693,95.0553,JP1,,,,,"/>
-<approved hash="113,1,139.023,128.465,JP3,,,,,"/>
+<approved hash="102,1,212.09,74.93,3V3-EXT,3V3,,,,"/>
+<approved hash="102,1,241.3,132.08,+3V3,3V3,,,,"/>
+<approved hash="102,1,134.62,53.34,+5V,5V,,,,"/>
+<approved hash="102,1,76.2,142.24,+3V3,3V3,,,,"/>
+<approved hash="104,1,134.62,38.1,WS2812,VDD,VLED,,,"/>
+<approved hash="106,1,148.59,138.43,A0,,,,,"/>
+<approved hash="106,1,148.59,133.35,GPIO14,,,,,"/>
+<approved hash="106,1,148.59,135.89,GPIO16,,,,,"/>
+<approved hash="106,1,148.59,140.97,RST,,,,,"/>
+<approved hash="113,1,151.807,130.615,JP2,,,,,"/>
+<approved hash="113,1,180.933,130.615,JP1,,,,,"/>
+<approved hash="113,1,238.083,123.385,JP3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
