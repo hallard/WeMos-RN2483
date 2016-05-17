@@ -27,10 +27,14 @@ Detailed Description
 
 Look at the schematics for more informations.
 
-### Schematic  
+### Firmware
+
+You can WiFi to Serial with a firmware like [WebSocketToSerial][6] I made for this kind of functions.
+
+### Schematic
 ![schematic](https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/WeMos-RN2483-sch.png)  
 
-### Boards  
+### Boards 
 <img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/WeMos-RN2483-top.png" alt="Top" width="40%" height="40%">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/WeMos-RN2483-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
 
@@ -38,9 +42,9 @@ You can order the PCB of this board at [OSHPARK][3]
 
 ### Assembled boards (V1.0)
 
-<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-top.jpg" alt="Top" width="50%" height="40%">&nbsp;
-<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-bot.jpg" alt="Bottom" width="50%" height="40%">&nbsp; 
-<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-mod.jpg" alt="Bottom" width="50%" height="40%">&nbsp; 
+<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-top.jpg" alt="Top">&nbsp;
+<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-bot.jpg" alt="Bottom">&nbsp; 
+<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-mod.jpg" alt="Bottom With RN2483">&nbsp; 
 
 ##License
 
@@ -54,5 +58,5 @@ See news and other projects on my [blog][2]
 [3]: https://oshpark.com/shared_projects/G3MI8Wk2
 [4]: http://www.microchip.com/wwwproducts/Devices.aspx?product=RN2483
 [5]: https://www.disk91.com/2015/technology/networks/first-step-in-lora-land-microchip-rn2483-test/
-[6]: http://www.tme.eu/gb/details/rtx-mid-3v/aurel-rf-communication-modules/aurel/650201033g/
+[6]: https://github.com/hallard/WebSocketToSerial
 [7]: http://www.microchip.com/wwwproducts/Devices.aspx?product=RN2903
