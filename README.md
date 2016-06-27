@@ -1,6 +1,8 @@
 ESP8266 WeMos Shield for microchip LORAWAN RN2483 or RN2903
 ===========================================================
 
+<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/RN2483-Stacked.jpg" alt="WeMos With RN2483"> 
+
 This shield is used to hold [RN2483][4] Software with WeMos ESP8266 boards it has just few minimal features. 
 - I2C Pullups placement
 - Classic I2C 128x64 OLED connector
