@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="2.5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -307,14 +307,14 @@
 <text x="1.39175" y="12.797" size="0.889" layer="26" font="vector" ratio="15" rot="MR90">SCL</text>
 <text x="1.39175" y="10.257" size="0.889" layer="26" font="vector" ratio="15" rot="MR90">GND</text>
 <text x="1.39175" y="7.717" size="0.889" layer="26" font="vector" ratio="15" rot="MR90">3V3</text>
-<text x="6.1595" y="14.06525" size="1.4224" layer="26" font="vector" ratio="15" rot="MR270" align="center">WeMos Lora GW</text>
+<text x="6.1595" y="13.43025" size="1.4224" layer="26" font="vector" ratio="15" rot="MR270" align="center">Lora Node</text>
 <wire x1="33.655" y1="22.225" x2="33.655" y2="25.4" width="0.2032" layer="21"/>
 <wire x1="31.75" y1="21.59" x2="33.02" y2="21.59" width="0.2032" layer="21"/>
 <wire x1="34.29" y1="21.59" x2="35.56" y2="21.59" width="0.2032" layer="21"/>
 <wire x1="33.655" y1="22.225" x2="34.29" y2="21.59" width="0.2032" layer="21"/>
 <wire x1="33.02" y1="21.59" x2="33.655" y2="22.225" width="0.2032" layer="21"/>
 <text x="34.29175" y="22.10325" size="0.8128" layer="25" font="vector" ratio="15">DO</text>
-<text x="26.00325" y="5.55625" size="1.4224" layer="25" font="vector" ratio="15" rot="R180" align="center">Lora Gateway</text>
+<text x="27.14625" y="5.55625" size="1.4224" layer="25" font="vector" ratio="15" rot="R180" align="center">Lora Node</text>
 <text x="21.36775" y="19.05" size="1.4224" layer="26" font="vector" ratio="15" rot="MR180" align="center">http://hallard.me</text>
 <text x="18.98825" y="13.46725" size="0.889" layer="25" font="vector" ratio="15">TX</text>
 <text x="22.73475" y="13.46725" size="0.889" layer="25" font="vector" ratio="15">RX</text>
@@ -1368,7 +1368,7 @@ design rules under a new name.</description>
 <contactref element="SW1" pad="3"/>
 <contactref element="SW1" pad="4"/>
 <via x="25.4" y="7.8105" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="23.5585" y="5.1435" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="23.71725" y="4.445" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="15.875" y="2.7305" extent="1-16" drill="0.3556" diameter="0.7112"/>
 </signal>
 <signal name="SCL">
@@ -1456,19 +1456,18 @@ design rules under a new name.</description>
 <via x="17.78" y="16.51" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <wire x1="15.875" y1="10.43" x2="13.335" y2="10.43" width="0.3048" layer="1"/>
 <wire x1="32.385" y1="1.27" x2="32.385" y2="3.175" width="0.6096" layer="1"/>
-<wire x1="32.385" y1="3.175" x2="29.845" y2="5.715" width="0.6096" layer="1"/>
-<wire x1="29.845" y1="5.715" x2="24.3205" y2="5.7785" width="0.6096" layer="1"/>
-<via x="24.3205" y="5.7785" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<wire x1="32.385" y1="3.175" x2="29.21" y2="6.35" width="0.6096" layer="1"/>
+<wire x1="29.21" y1="6.35" x2="24.0665" y2="6.35" width="0.6096" layer="1"/>
+<via x="24.0665" y="6.35" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <wire x1="6.7945" y1="2.54" x2="6.0325" y2="3.302" width="0.6096" layer="1"/>
 <wire x1="6.0325" y1="3.302" x2="6.0325" y2="7.9375" width="0.6096" layer="1"/>
 <wire x1="6.0325" y1="7.9375" x2="5.08" y2="8.89" width="0.6096" layer="1"/>
 <wire x1="5.08" y1="8.89" x2="3.302" y2="8.89" width="0.6096" layer="1"/>
-<wire x1="24.3205" y1="5.7785" x2="23.749" y2="6.35" width="0.6096" layer="16"/>
 <wire x1="16.113" y1="16.51" x2="17.78" y2="16.51" width="0.6096" layer="1"/>
 <via x="16.477665625" y="8.318690625" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <wire x1="6.7945" y1="2.54" x2="10.795" y2="2.54" width="0.6096" layer="1"/>
 <wire x1="10.795" y1="2.54" x2="12.065" y2="1.27" width="0.6096" layer="1"/>
-<wire x1="23.749" y1="6.35" x2="20.955" y2="6.35" width="0.6096" layer="16"/>
+<wire x1="24.0665" y1="6.35" x2="20.955" y2="6.35" width="0.6096" layer="16"/>
 <wire x1="20.955" y1="6.35" x2="18.415" y2="6.35" width="0.6096" layer="16"/>
 <wire x1="15.24" y1="13.97" x2="17.78" y2="16.51" width="0.6096" layer="16"/>
 <wire x1="20.32" y1="3.683" x2="20.32" y2="5.715" width="0.6096" layer="16"/>
