@@ -15,14 +15,19 @@ This shield is used to hold [RN2483][4] Software with WeMos ESP8266 boards it ha
 You can find more information on WeMos on their [site][1], it's really well documented. There is also a nice blog post on Microchip module made by disk91 [here][5]
 I now use WeMos boards instead of NodeMCU's one because they're just smaller, features remains the same, but I also suspect WeMos regulator far better quality than the one used on NodeMCU that are just fake of originals AMS117 3V3.
 
-**Boards arrived from OSHPark, I tested them, worked out of the box but I made new revision cand corrected some mistakes**
+**V1.1 Boards arrived from OSHPark, I tested them, worked out of the box but I made new revision cand corrected some mistakes**
+V1.2 contain the following changes (board only, nothing chnaged on schematic):
+- Added isolate ground pane to avoid sometime short between header and ground after soldering headers 
+- Changed Silk to Node instead of gateway 
+
+**V1.0 Boards arrived from OSHPark, I tested them, worked out of the box but I made new revision cand corrected some mistakes**
 V1.1 contain the following changes:
 - Error with RX/TX swapped on ESP8266, they are GPIO15/GPIO13 nor GPIO12/GPIO13 (so with V1.0 you can use SoftSerial or Native RX/TX of ESP but not in swapped mode)
 - I made larger pad for Microchip module, even if I have strong experience in soldering in SMD, it was a pain to do them see picture below, I suspected board/solder. Ok made some new ones, think now I've got the technique ;-)
 - Switch moved from GPIO14 to GPIO2, so I removed pullup because WeMos already have one on GPIO2
 - Removed GPIO0 and GPIO11 from RN2483 to avoid as much as possible closer PAD
 
-**V1.1 Boards are tested and working**
+**V1.1 Boards are tested and working, waiting to test V1.2 but should works, just minor changes**
 
 Detailed Description
 ====================
