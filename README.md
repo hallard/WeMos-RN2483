@@ -41,7 +41,7 @@ You can WiFi to Serial with a firmware like [WebSocketToSerial][6] I made for th
 
 ### Boards 
 <img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-top.png" alt="Top" width="40%" height="40%">&nbsp;
-<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/eMos-RN2483-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
+<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
 
 You can order the PCB of this board at [OSHPARK][3] or at [PCBs.io][8]. But PCBs.io give me reward that allow me to buy some new created boards.
 
