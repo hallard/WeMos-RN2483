@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3701,7 +3701,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="I2C_OLED" library="_c2h" deviceset="CON_HEADER_1X04" device="'SMALL''" value="CON_HEADER_1X04'SMALL''"/>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
 <attribute name="CNAME" value="ESP8266 WeMos Lora RN2483 Shield"/>
-<attribute name="CREVISION" value="1.1"/>
+<attribute name="CREVISION" value="1.2"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
 <part name="P+7" library="_c2h" deviceset="3V3-EXT" device="" value="3V3"/>
