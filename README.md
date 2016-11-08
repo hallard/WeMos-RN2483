@@ -43,7 +43,7 @@ You can WiFi to Serial with a firmware like [WebSocketToSerial][6] I made for th
 <img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/WeMos-RN2483-top.png" alt="Top" width="40%" height="40%">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/WeMos-RN2483-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
 
-You can order the PCB of this board at [OSHPARK][3]
+You can order the PCB of this board at [OSHPARK][3] or at [PCBs.io][8]. But PCBs.io give me reward that allow me to buy some new created boards.
 
 ### Assembled boards (V1.0)
 
@@ -53,7 +53,10 @@ You can order the PCB of this board at [OSHPARK][3]
 
 ##License
 
-You can do whatever you like with this design.
+<img alt="Creative Commons Attribution-NonCommercial 4.0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png">   
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)    
+If you want to do commercial stuff with this project, please contact [CH2i company](https://www.ch2i.eu/en#support) so we can organize an simple agreement.
 
 ##Misc
 See news and other projects on my [blog][2] 
@@ -65,3 +68,4 @@ See news and other projects on my [blog][2]
 [5]: https://www.disk91.com/2015/technology/networks/first-step-in-lora-land-microchip-rn2483-test/
 [6]: https://github.com/hallard/WebSocketToSerial
 [7]: http://www.microchip.com/wwwproducts/Devices.aspx?product=RN2903
+[8]: https://PCBs.io/share/zMbEp
