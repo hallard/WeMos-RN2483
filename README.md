@@ -22,7 +22,7 @@ V1.1 contain the following changes:
 - Switch moved from GPIO14 to GPIO2, so I removed pullup because WeMos already have one on GPIO2
 - Removed GPIO0 and GPIO11 from RN2483 to avoid as much as possible closer PAD
 
-**Waiting for V1.1 Boards from OSHPark, I did not fully tested them yet, I will update ASAP. Use at your own risks**
+**V1.1 Boards are tested and working**
 
 Detailed Description
 ====================
