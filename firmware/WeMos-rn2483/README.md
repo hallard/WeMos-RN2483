@@ -130,7 +130,9 @@ See news and other projects on my [blog][2]
 [7]: https://nodejs.org/
 [8]: https://github.com/hallard/WeMos-RN2483/blob/master/README.md
 [9]: http://cdn.rawgit.com/hallard/WebSocketToSerial/master/webdev/index.htm
-[10]: https://github.com/hallard/WeMos-RN2483/tree/master/WeMos-rn2483/webdev
-[11]: https://github.com/hallard/WeMos-RN2483/blob/master/WeMos-rn2483/ebdev/create_spiffs.js
-[12]: https://github.com/hallard/WeMos-RN2483/blob/master/WeMos-rn2483/webdev/web_server.js
-[13]: https://github.com/hallard/WeMos-RN2483/tree/master/data
+[10]: https://github.com/hallard/WeMos-RN2483/tree/master/firmware/WeMos-rn2483/webdev
+[11]: https://github.com/hallard/WeMos-RN2483/blob/master/firmware/WeMos-rn2483/webdev/create_spiffs.js
+[12]: https://github.com/hallard/WeMos-RN2483/blob/master/firmware/WeMos-rn2483/webdev/web_server.js
+[13]: https://github.com/hallard/WeMos-RN2483/tree/master/firmware/WeMos-rn2483/data
+
+
