@@ -39,9 +39,6 @@ Look at the schematics for more informations.
 Firmware is currently under developement and may not work as you expected, but for now it works fine for our testing lab.
 It's available under [firmware folder][9]. See dedicated [README.md][10].
 
-### Action
-<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/web-terminal.jpg" alt="Web Console">&nbsp;
-
 ### Schematic
 ![schematic](https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/WeMos-RN2483-sch.png)  
 
