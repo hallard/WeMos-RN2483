@@ -61,7 +61,7 @@ Every command in file `startup.ini` are executed in setup() you can chain with o
 
 I'm using this sketch to drive Microchip RN2483 Lora module to test LoraWan, see the [boards][8] I used.
 
-For example my `startup.ini` file contains command to read microchip RN2483 config file named `rn2483.txt`
+For example my `startup.ini` file contains command to read microchip RN2483 config file named `rn2483-cfg.txt` then chain to join otaa with file `rn2483-ttn-otaa.txt`
 
 `startup.ini`
 ```sh
@@ -69,33 +69,81 @@ For example my `startup.ini` file contains command to read microchip RN2483 conf
 # commands prefixed by ! are executed by ESP
 # all others passed to serial module
 
-# Chain with Microchip Lora rn2483 configuration
-!read /rn2483.txt
+# Set Onboard RGB LED luminosity (0=off 100=full light)
+!rgb 50
+
+# Microchip Lora rn2483 configuration
+!read /rn2483-cfg.txt
+
+# Join ttn in otaa mode
+!read /rn2483-ttn-otaa.txt
 
 ```
 
-rn2483 configuration file for my [WeMos shield][8] `rn2483.txt`
+RN2483 configuration file example for [RN2483 shield][8] `rn2483-cfg.txt`
 ```shell
 # Startup config file for Microchip RN2483
-# commands prefixed by ! are executed by ESP all others passed to serial module
-# !delay is not executed when connected via browser web terminal (websocket)
+# commands prefixed by ! or $ are executed by ESP all others passed to serial module
+# command starting with $ wait until device return \n 
+# RN2483 always return string followed by "\r\n" on each command (ex "ok\r\n")
+# so $ wait a response (good or not) before sending next command
+# !delay or any $ are not executed when connected via browser web terminal (websocket)
 # See schematics here https://github.com/hallard/WeMos-RN2483
 
 # Set ESP Module serial speed (RN2483 is 57600)
-!baud 57600
-!delay 100
+# as reminder, it's now done in sketch
+# !baud 57600
+# !delay 50
 
-# reset RN2483 module (reset pin connected to ESP GPIO15)
-!reset 15
-!delay 1000
+# For Hardware boards V1.1+
+# -------------------------
+# reset RN2483 module 
+$reset 12
 
-# Light on the LED on GPIO0
-sys set pindig GPIO0 1
-!delay 250
+# !baud 57600
+# !delay 50
 
-# Light on the LED on GPIO10
-sys set pindig GPIO10 1
-!delay 250
+# Wired GPIO to output 
+$sys set pinmode GPIO1 digout
+$sys set pinmode GPIO10 digout
+
+# Light on the LED on all GPIO
+$sys set pindig GPIO1 1
+$sys set pindig GPIO10 1
+
+# Custom config here 
+# ------------------
+
+# Set Power Max
+$radio set pwr 14
+```
+
+RN2483 join TTN otaa configuration file example for [RN2483 shield][8] `rn2483-otaa.txt`
+```shell
+# Startup config file for Microchip RN2483 join TTN in otaa
+# commands prefixed by ! or $ are executed by ESP all others passed to serial module
+# command starting with $ wait until device return \n 
+# RN2483 always return string followed by "\r\n" on each command (ex "ok\r\n")
+# so $ wait a response (good or not) before sending next command
+# !delay or any $ are not executed when connected via browser web terminal (websocket)
+# See schematics here https://github.com/hallard/WeMos-RN2483
+
+# Your device should have been registered on TTN before using, here is how to
+# On the RN2483, use `sys get hweui` and `mac get deveui` you get the devices hweui & deveui
+# They are probably the same, then register device on TTN dashboard
+# or with command line with `ttnctl devices register YOUR-DEV-EUI`
+# see help https://github.com/lukastheiler/ttn_moteino/blob/master/Readme.md
+
+# Then you must setup your keys (obtained from TTN dashboard)
+# or in command line with `ttnctl devices info YOUR-DEV-EUI`
+# then on RN2483 device (1st setup)
+# $mac set appeui YOUR_APP_EUI
+# $mac set appkey YOUR_APP_KEY
+# and saved with `mac save`
+# $mac save
+
+# Then Join TTN Network
+$mac join otaa
 ```
 
 By the way I integrated the excellent @me-no-dev SPIFFS Web editor so you can direct edit configuration files of SPIFFS going to 
