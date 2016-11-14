@@ -146,12 +146,17 @@ RN2483 join TTN otaa configuration file example for [RN2483 shield][8] `rn2483-o
 $mac join otaa
 ```
 
-By the way I integrated the excellent @me-no-dev SPIFFS Web editor so you can direct edit configuration files of SPIFFS going to 
-`http://ESP_IP/edit`
-Your computer need to be connected to Internet (so may be your ESP8266 device) and authenticated for this feature, default login/pass are in the sketch (admin/admin)
+### So what does this looks like ?
+
+<img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/web-terminal.jpg" alt="Web Console">
 
 See all in action    
 http://cdn.rawgit.com/hallard/WeMos-RN2483/master/firmware/WeMos-rn2483/webdev/index.htm
+
+By the way I integrated the excellent @me-no-dev SPIFFS Web editor so you can direct edit configuration files of SPIFFS going to 
+`http://your_module_ip/edit`
+Your computer need to be connected to Internet (so may be your ESP8266 device) and authenticated for this feature, default login/pass are in the sketch (admin/admin)
+
 
 Known Issues/Missing Features:
 ------------------------------
