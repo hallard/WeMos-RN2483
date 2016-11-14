@@ -36,7 +36,8 @@ Look at the schematics for more informations.
 
 ### Firmware
 
-You can WiFi to Serial with a firmware like [WebSocketToSerial][6] I made for this kind of functions.
+Firmware is currently under developement and may not work as you expected, but for now it works fine for our testing lab.
+It's available under [firmware folder][9]. See dedicated [README.md][10].
 
 ### Action
 <img src="https://raw.githubusercontent.com/hallard/WeMos-RN2483/master/pictures/web-terminal.jpg" alt="Web Console">&nbsp;
@@ -74,3 +75,5 @@ See news and other projects on my [blog][2]
 [6]: https://github.com/hallard/WebSocketToSerial
 [7]: http://www.microchip.com/wwwproducts/Devices.aspx?product=RN2903
 [8]: https://PCBs.io/share/zMbEp
+[9]: https://github.com/hallard/WeMos-RN2483/tree/master/firmware/WeMos-rn2483
+[10]: https://github.com/hallard/WeMos-RN2483/blob/master/firmware/WeMos-rn2483/README.md
