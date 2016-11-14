@@ -103,7 +103,7 @@ By the way I integrated the excellent @me-no-dev SPIFFS Web editor so you can di
 Your computer need to be connected to Internet (so may be your ESP8266 device) and authenticated for this feature, default login/pass are in the sketch (admin/admin)
 
 See all in action    
-http://cdn.rawgit.com/hallard/WebSocketToSerial/master/webdev/index.htm
+http://cdn.rawgit.com/hallard/WeMos-RN2483/tree/master/firmware/WeMos-rn2483/webdev/index.htm
 
 Known Issues/Missing Features:
 ------------------------------
@@ -129,7 +129,7 @@ See news and other projects on my [blog][2]
 [6]: https://github.com/esp8266/Arduino/blob/master/README.md
 [7]: https://nodejs.org/
 [8]: https://github.com/hallard/WeMos-RN2483/blob/master/README.md
-[9]: http://cdn.rawgit.com/hallard/WebSocketToSerial/master/webdev/index.htm
+[9]: http://cdn.rawgit.com/hallard/WeMos-RN2483/tree/master/firmware/WeMos-rn2483/webdev/index.htm
 [10]: https://github.com/hallard/WeMos-RN2483/tree/master/firmware/WeMos-rn2483/webdev
 [11]: https://github.com/hallard/WeMos-RN2483/blob/master/firmware/WeMos-rn2483/webdev/create_spiffs.js
 [12]: https://github.com/hallard/WeMos-RN2483/blob/master/firmware/WeMos-rn2483/webdev/web_server.js
