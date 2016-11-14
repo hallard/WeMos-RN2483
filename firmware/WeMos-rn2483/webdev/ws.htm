@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>WebSocket Test</title>
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/reconn-ws.js"></script>
+</head>
+<body>
+<script>
+var ws = null;    // Websocket
+
+// Stop WebSocket
+function stopWS(stop) {
+  console.log("stopWS(%s) ws=%s",stop?"true":"null", ws?"true":"null");
+  // Close WS if already opened
+  if (ws) {
+    ws.close();
+    // Destroy WebSocket (disable auto reconnect)
+    if (stop) {
+      ws = null;
+    }
+  }    
+}
+
+// Start WebSocket
+function startWS(url) {
+  console.log("startWS");
+  if (url === undefined )
+    url = document.location.host;
+  stopWS(true);
+
+  ws = new ReconnectingWebSocket('ws://'+url+'/ws');
+  ws.debug = true;
+
+  ws.onopen = function(e) {
+    console.log("ws.onopen() ws=%s",ws?"true":"null");
+  };
+
+  ws.onclose = function(e){
+    console.log("ws.onclose() ws=%s",ws?"true":"null");
+  };
+
+  ws.onerror = function(e){
+    console.log("ws.onerror ", e);
+  };
+
+  ws.onmessage = function(e){
+    var msg = "";
+    if(e.data instanceof ArrayBuffer){
+      // WS binary in blue
+      var bytes = new Uint8Array(e.data);
+      for (var i = 0; i < bytes.length; i++) {
+        msg += String.fromCharCode(bytes[i]);
+      }
+    } else {
+      // WS text in green
+      msg = e.data;
+    }
+    console.log("received WS message '%s'",msg);
+  };
+}
+
+jQuery(document).ready(function($) {
+  // Instanciate the Websocket object
+  startWS();
+});
+</script>
+</body>
+<h1>WebSocket example, see log console</h1>
+</html>

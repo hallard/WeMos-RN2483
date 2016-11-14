@@ -1,0 +1,52 @@
+# Startup config file for Microchip RN2483
+# commands prefixed by ! or $ are executed by ESP all others passed to serial module
+# command starting with $ wait until device return \n 
+# RN2483 always return string followed by "\r\n" on each command (ex "ok\r\n")
+# so $ wait a response (good or not) before sending next command
+# !delay or any $ are not executed when connected via browser web terminal (websocket)
+# See schematics here https://github.com/hallard/WeMos-RN2483
+
+# Set ESP Module serial speed (RN2483 is 57600)
+# as reminder, it's now done in sketch
+# !baud 57600
+# !delay 50
+
+# For Hardware boards V1.0
+# ------------------------
+# reset RN2483 module 
+# $reset 15
+
+# Wired GPIO to output 
+# $sys set pinmode GPIO0 digout
+# $sys set pinmode GPIO11 digout
+
+# Light on the LED on all GPIO
+# $sys set pindig GPIO1 0
+# $sys set pindig GPIO11 1
+
+# For Hardware boards V1.1+
+# -------------------------
+# reset RN2483 module 
+$reset 12
+
+# Wired GPIO to output 
+$sys set pinmode GPIO1 digout
+$sys set pinmode GPIO10 digout
+
+# Light on the LED on all GPIO
+$sys set pindig GPIO1 1
+$sys set pindig GPIO10 1
+
+
+# Custom config here 
+# ------------------
+
+# Stop LoraWan
+# $mac pause
+
+# Set watchdog to 5 min
+# $radio set wdt 300000
+
+# Set Power Max
+$radio set pwr 14
+
