@@ -72,5 +72,5 @@ See news and other projects on my [blog][2]
 [6]: https://github.com/hallard/WebSocketToSerial
 [7]: http://www.microchip.com/wwwproducts/Devices.aspx?product=RN2903
 [8]: https://PCBs.io/share/zMbEp
-[9]: https://github.com/hallard/WeMos-RN2483/tree/master/firmware/WeMos-rn2483
-[10]: https://github.com/hallard/WeMos-RN2483/blob/master/firmware/WeMos-rn2483/README.md
+[9]: https://github.com/hallard/WeMos-RN2483-firmware/tree/master/WeMos-rn2483
+[10]: https://github.com/hallard/WeMos-RN2483-firmware/blob/master/WeMos-rn2483/README.md
